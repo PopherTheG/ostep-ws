@@ -1,0 +1,3 @@
+Write a program that calls fork(). Before calling fork(), have the main process access a variable (e.g., x) and set its value to some-thing (e.g., 100). What value is the variable in the child process? What happens to the variable when both the child and parent change the value of x? 
+
+I observed that the child inherits the final value set in the parent process, but the parent does not inherit the final value of x when the child finished executing.
